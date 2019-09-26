@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp"
+        android:background="#F4C6BC"
+        android:gravity="center_horizontal|center_vertical"
+        tools:context="com.exampledemo.parsaniahardik.scanzxingdemonuts.MainActivity">
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/qr" />
+
+        <Button
+            android:id="@+id/bn"
+            android:layout_width="300dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/lib" />
+
+    <Button
+        android:id="@+id/log"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/out"
+        android:onClick="onLogout"/>
+        <!--<Button
+            android:id="@+id/btn"
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:background="#e85a4f"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:text="Scan Barcode or QR code" />
+
+        <Button
+            android:id="@+id/bn"
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#e85a4f"
+            android:text="Books Library"
+            android:textColor="#fff"
+            android:textSize="20dp" />-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvresult"
+            android:textColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Result will appear here"
+            android:textAlignment="center"
+            android:autoLink="web"
+            android:linksClickable="true"/>
+
+    </LinearLayout>
