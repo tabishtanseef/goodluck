@@ -1,4 +1,4 @@
-#Thu Sep 26 17:09:41 IST 2019
+#Sat Sep 28 17:43:51 IST 2019
 base.0=C\:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

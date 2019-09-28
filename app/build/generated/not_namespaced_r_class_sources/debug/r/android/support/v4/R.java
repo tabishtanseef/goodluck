@@ -12,15 +12,15 @@ public final class R {
     public static final class attr {
         private attr() {}
 
-        public static final int font = 0x7f020081;
-        public static final int fontProviderAuthority = 0x7f020083;
-        public static final int fontProviderCerts = 0x7f020084;
-        public static final int fontProviderFetchStrategy = 0x7f020085;
-        public static final int fontProviderFetchTimeout = 0x7f020086;
-        public static final int fontProviderPackage = 0x7f020087;
-        public static final int fontProviderQuery = 0x7f020088;
-        public static final int fontStyle = 0x7f020089;
-        public static final int fontWeight = 0x7f02008a;
+        public static final int font = 0x7f020092;
+        public static final int fontProviderAuthority = 0x7f020094;
+        public static final int fontProviderCerts = 0x7f020095;
+        public static final int fontProviderFetchStrategy = 0x7f020096;
+        public static final int fontProviderFetchTimeout = 0x7f020097;
+        public static final int fontProviderPackage = 0x7f020098;
+        public static final int fontProviderQuery = 0x7f020099;
+        public static final int fontStyle = 0x7f02009a;
+        public static final int fontWeight = 0x7f02009b;
     }
     public static final class bool {
         private bool() {}
@@ -30,13 +30,13 @@ public final class R {
     public static final class color {
         private color() {}
 
-        public static final int notification_action_color_filter = 0x7f040047;
-        public static final int notification_icon_bg_color = 0x7f040048;
-        public static final int notification_material_background_media_default_color = 0x7f040049;
-        public static final int primary_text_default_material_dark = 0x7f04004e;
-        public static final int ripple_material_light = 0x7f040053;
-        public static final int secondary_text_default_material_dark = 0x7f040054;
-        public static final int secondary_text_default_material_light = 0x7f040055;
+        public static final int notification_action_color_filter = 0x7f040049;
+        public static final int notification_icon_bg_color = 0x7f04004a;
+        public static final int notification_material_background_media_default_color = 0x7f04004b;
+        public static final int primary_text_default_material_dark = 0x7f040050;
+        public static final int ripple_material_light = 0x7f040055;
+        public static final int secondary_text_default_material_dark = 0x7f040056;
+        public static final int secondary_text_default_material_light = 0x7f040057;
     }
     public static final class dimen {
         private dimen() {}
@@ -161,14 +161,14 @@ public final class R {
     public static final class styleable {
         private styleable() {}
 
-        public static final int[] FontFamily = { 0x7f020083, 0x7f020084, 0x7f020085, 0x7f020086, 0x7f020087, 0x7f020088 };
+        public static final int[] FontFamily = { 0x7f020094, 0x7f020095, 0x7f020096, 0x7f020097, 0x7f020098, 0x7f020099 };
         public static final int FontFamily_fontProviderAuthority = 0;
         public static final int FontFamily_fontProviderCerts = 1;
         public static final int FontFamily_fontProviderFetchStrategy = 2;
         public static final int FontFamily_fontProviderFetchTimeout = 3;
         public static final int FontFamily_fontProviderPackage = 4;
         public static final int FontFamily_fontProviderQuery = 5;
-        public static final int[] FontFamilyFont = { 0x7f020081, 0x7f020089, 0x7f02008a };
+        public static final int[] FontFamilyFont = { 0x7f020092, 0x7f02009a, 0x7f02009b };
         public static final int FontFamilyFont_font = 0;
         public static final int FontFamilyFont_fontStyle = 1;
         public static final int FontFamilyFont_fontWeight = 2;

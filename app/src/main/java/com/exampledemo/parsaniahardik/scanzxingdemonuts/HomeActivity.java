@@ -55,9 +55,6 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
 
-
-
-
         if(haveNetwork()){
             button = (Button) findViewById(R.id.bn);
             button.setOnClickListener(new View.OnClickListener() {

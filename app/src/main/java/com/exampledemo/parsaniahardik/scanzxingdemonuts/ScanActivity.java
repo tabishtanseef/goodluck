@@ -55,9 +55,6 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
             Toast.makeText(ScanActivity.this,"Invalid Code", Toast.LENGTH_SHORT).show();
         }
 
-
-
-
         onBackPressed();
         isScanSuccess = true;
         mScannerView.resumeCameraPreview(this);

@@ -189,11 +189,12 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
                 /*session.setusename(user_name);
                 session.setpassword(password);*/
             String user_id =  result.substring(15);
+            //using the database of books to get the details of user and the books he had scanned
             SharedPreferences pref = context.getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
             SharedPreferences.Editor editor = pref.edit();
-
             editor.putString("user_id", user_id);
             editor.putString("username", user_name);
+
             editor.commit();
             alertDialog.setMessage(user_id);
             alertDialog.show();
