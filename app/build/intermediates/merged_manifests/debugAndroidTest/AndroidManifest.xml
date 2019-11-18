@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.exampledemo.parsaniahardik.scanzxingdemonuts.test">
+    package="com.exampledemo.tabishtanseef.scanzxingdemonuts.test">
 
-    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="26" />
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28" />
 
     <application android:debuggable="true" >
         <uses-library android:name="android.test.runner" />
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.exampledemo.parsaniahardik.scanzxingdemonuts"
+                     android:targetPackage="com.exampledemo.tabishtanseef.scanzxingdemonuts"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.exampledemo.parsaniahardik.scanzxingdemonuts"/>
+                     android:label="Tests for com.exampledemo.tabishtanseef.scanzxingdemonuts"/>
 </manifest>

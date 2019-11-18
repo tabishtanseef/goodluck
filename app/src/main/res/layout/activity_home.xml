@@ -10,7 +10,7 @@
         android:paddingTop="16dp"
         android:background="#F4C6BC"
         android:gravity="center_horizontal|center_vertical"
-        tools:context="com.exampledemo.parsaniahardik.scanzxingdemonuts.MainActivity">
+        tools:context="com.exampledemo.tabishtanseef.scanzxingdemonuts.MainActivity">
 
         <Button
             android:id="@+id/btn"
