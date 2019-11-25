@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\a8e7153660f0642982a76d40bd652b71\\cardview-v7-28.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\67b0ea41bb31f1300bd726681636eb0e\\cardview-v7-28.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\bbf07aa1da9ab954374e693dfcc335b9\\appcompat-v7-28.0.0\\res\\values-v23\\values-v23.xml",
+                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\2ad9bfadafd430f8dbad1412b3cf8d16\\appcompat-v7-28.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,19,32,33,34,35,36",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4",

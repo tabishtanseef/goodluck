@@ -114,7 +114,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         else if(type.equals("insertBook")){
             try {
                 String id = params[1];
-                String bookname = params[2];
+                String bookcode = params[2];
                 URL url = new URL(insertBook_url);
                 HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
                 httpURLConnection.setRequestMethod("POST");
@@ -123,7 +123,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
                 OutputStream outputStream = httpURLConnection.getOutputStream();
                 BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
                 String post_data = URLEncoder.encode("user_id","UTF-8")+"="+URLEncoder.encode(id,"UTF-8")+"&"+
-                        URLEncoder.encode("book_title","UTF-8")+"="+URLEncoder.encode(bookname,"UTF-8");
+                        URLEncoder.encode("book_code","UTF-8")+"="+URLEncoder.encode(bookcode,"UTF-8");
                 bufferedWriter.write(post_data);
                 bufferedWriter.flush();
                 bufferedWriter.close();

@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.exampledemo.tabishtanseef.scanzxingdemonuts"
     android:targetSandboxVersion="2"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="2.0" >
 
     <uses-sdk
         android:minSdkVersion="16"
@@ -20,7 +20,6 @@
         android:icon="@mipmap/ic_launcher"
         android:label="DigiGoodLuck"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.RegisterActivity" />
         <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.LoginActivity" />
