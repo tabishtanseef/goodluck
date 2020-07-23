@@ -1,4 +1,4 @@
-package com.exampledemo.parsaniahardik.scanzxingdemonuts;
+package com.exampledemo.tabishtanseef.scanzxingdemonuts;
 
 import org.junit.Test;
 

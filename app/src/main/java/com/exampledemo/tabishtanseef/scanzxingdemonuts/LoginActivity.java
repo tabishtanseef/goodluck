@@ -77,6 +77,7 @@ public class LoginActivity extends AppCompatActivity {
     }*/
     public void onLogin(View view){
         String username = UsernameEt.getText().toString();
+        username = username.replaceAll("\\s","");
         String password = PasswordEt.getText().toString();
         String type = "login";
 

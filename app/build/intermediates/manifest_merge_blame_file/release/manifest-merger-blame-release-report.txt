@@ -1,8 +1,8 @@
 1<?xml version="1.0" encoding="utf-8"?>
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.exampledemo.tabishtanseef.scanzxingdemonuts"
-4    android:versionCode="2"
-5    android:versionName="2.0" >
+4    android:versionCode="6"
+5    android:versionName="6.0" >
 6
 7    <uses-sdk
 8        android:minSdkVersion="16"
@@ -21,51 +21,56 @@
 13-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:7:22-76
 14
 15    <application
-15-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:9:5-29:19
+15-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:9:5-31:19
 16        android:allowBackup="true"
 16-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:10:9-35
 17        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
-17-->[com.android.support:support-compat:28.0.0] C:\Users\Tabish\.gradle\caches\transforms-2\files-2.1\f14724208b5bfeeef0d6bdefe649bca7\support-compat-28.0.0\AndroidManifest.xml:22:18-91
-18        android:icon="@mipmap/ic_launcher"
+17-->[com.android.support:support-compat:28.0.0] C:\Users\Tabish\.gradle\caches\transforms-2\files-2.1\ccbd3881d3e597a650ace942161206f5\support-compat-28.0.0\AndroidManifest.xml:22:18-91
+18        android:hardwareAccelerated="true"
 18-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:11:9-43
-19        android:label="DigiGoodLuck"
-19-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:12:9-37
-20        android:supportsRtl="true"
-20-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:13:9-35
-21        android:theme="@style/AppTheme" >
-21-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:14:9-40
-22        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.RegisterActivity" />
-22-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:15:9-63
-22-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:15:19-51
-23        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.LoginActivity" />
-23-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:16:9-51
-23-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:16:19-48
-24        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.HomeActivity" />
-24-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:17:9-50
-24-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:17:19-47
-25        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.Main2Activity" />
-25-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:18:9-51
-25-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:18:19-48
+19        android:icon="@mipmap/ic_launcher"
+19-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:12:9-43
+20        android:label="DigiGoodLuck"
+20-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:13:9-37
+21        android:supportsRtl="true"
+21-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:14:9-35
+22        android:theme="@style/AppTheme" >
+22-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:15:9-40
+23        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.RegisterActivity" />
+23-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:16:9-63
+23-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:16:19-51
+24        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.LoginActivity" />
+24-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:17:9-51
+24-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:17:19-48
+25        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.HomeActivity" />
+25-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:18:9-50
+25-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:18:19-47
 26        <activity
-26-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:19:9-27:20
-27            android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.MainActivity"
-27-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:20:13-41
-28            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
-28-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:21:13-122
-29            <intent-filter>
-29-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:22:13-26:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:23:17-69
-30-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:23:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:25:17-77
-32-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:25:27-74
-33            </intent-filter>
-34        </activity>
-35        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.ScanActivity" />
-35-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:28:9-50
-35-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:28:19-47
-36    </application>
-37
-38</manifest>
+26-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:19:9-20:124
+27            android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.Main2Activity"
+27-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:19:19-48
+28            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
+28-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:20:13-122
+29        <activity
+29-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:21:9-29:20
+30            android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.MainActivity"
+30-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:22:13-41
+31            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >
+31-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:23:13-122
+32            <intent-filter>
+32-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:24:13-28:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:25:17-69
+33-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:25:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:27:17-77
+35-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:27:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.ScanActivity" />
+38-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:30:9-50
+38-->C:\Users\Tabish\AndroidStudioProjects\ScanZxingDemonuts - Copy\app\src\main\AndroidManifest.xml:30:19-47
+39    </application>
+40
+41</manifest>

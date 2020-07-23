@@ -37,22 +37,9 @@ public class ScanActivity extends AppCompatActivity implements ZXingScannerView.
     @Override
     public void handleResult(Result rawResult) {
 
-        String strt = rawResult.getText().substring(0,8);
         String strt2 = rawResult.getText().substring(0,41);
         //Toast.makeText(ScanActivity.this,strt, Toast.LENGTH_SHORT).show();
-        if(strt.equals("GoodLuck")) {
-            String book_code = rawResult.getText().substring(8);
-            SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
-            SharedPreferences.Editor editor = pref.edit();
-            editor.putString("book_title", book_code);
-            editor.commit();
-            String type = "insertBook";
-            String id = pref.getString("user_id",null);
-            String bookcode = pref.getString("book_code",null);
-            BackgroundWorker backgroundWorker = new BackgroundWorker(this);
-            backgroundWorker.execute(type,id,bookcode);
-        }
-        else if(strt2.equals("https://goodluck.digitopper.com/app/apis/")){
+        if(strt2.equals("https://goodluck.digitopper.com/app/apis/")){
             String book_code = rawResult.getText().substring(41);
             SharedPreferences pref = getApplicationContext().getSharedPreferences("MyPref", 0); // 0 - for private mode
             SharedPreferences.Editor editor = pref.edit();

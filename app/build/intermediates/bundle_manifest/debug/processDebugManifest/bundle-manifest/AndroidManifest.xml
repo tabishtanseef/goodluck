@@ -19,11 +19,14 @@
         android:icon="@mipmap/ic_launcher"
         android:label="DigiGoodLuck"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.RegisterActivity" />
         <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.LoginActivity" />
         <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.HomeActivity" />
-        <activity android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.Main2Activity" />
+        <activity
+            android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.Main2Activity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" />
         <activity
             android:name="com.exampledemo.tabishtanseef.scanzxingdemonuts.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" >

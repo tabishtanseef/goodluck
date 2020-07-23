@@ -50,6 +50,7 @@ public class RegisterActivity extends AppCompatActivity {
         String username = UsernameEt.getText().toString();
         String password = PasswordEt.getText().toString();
         String email = EmailEt.getText().toString();
+        email = email.replaceAll("\\s","");
         String num = NumEt.getText().toString();
         String type = "signup";
 

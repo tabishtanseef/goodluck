@@ -4,17 +4,7 @@
             "outputFile": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-hdpi-v4\\values-hdpi-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\8b198ff51c51dcb314b610aa9f76dd6f\\core-1.9\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
-                    "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,113",
-                        "endColumns": "57,55",
-                        "endOffsets": "108,164"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\2ad9bfadafd430f8dbad1412b3cf8d16\\appcompat-v7-28.0.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\0c91d46fdd28334f30b1556655513aca\\appcompat-v7-28.0.0\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "8",
                         "endColumns": "13",
                         "endOffsets": "441"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Tabish\\.gradle\\caches\\transforms-2\\files-2.1\\64157f31f165928352b633a504efc2a2\\core-1.9\\res\\values-hdpi-v4\\values-hdpi-v4.xml",
+                    "from": {
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,113",
+                        "endColumns": "57,55",
+                        "endOffsets": "108,164"
                     }
                 }
             ]

@@ -1,11 +1,14 @@
 package com.exampledemo.tabishtanseef.scanzxingdemonuts;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Handler;
+import android.support.annotation.RequiresApi;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -20,6 +23,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
 
+@RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
 public class BackgroundWorker extends AsyncTask<String, Void, String> {
     Context context;
     AlertDialog alertDialog;
@@ -28,7 +32,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
     }
 
     String user_name, password;
-
+    private ProgressDialog progressDialog;
     @Override
     protected String doInBackground(String... params) {
         String type = params[0];
@@ -155,6 +159,8 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
     protected void onPreExecute() {
         alertDialog = new AlertDialog.Builder(context).create();
         alertDialog.setTitle("User Status");
+        progressDialog = new ProgressDialog(context);
+        progressDialog.show();
     }
 
     @Override
@@ -191,6 +197,8 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         {
            /* Intent i = new Intent(context,LoginActivity.class);
             context.startActivity(i);*/
+            alertDialog.setMessage("Book Added Successfully");
+            alertDialog.show();
             new Handler().postDelayed(new Runnable(){
                 @Override
                 public void run(){
@@ -233,6 +241,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
                 }
             },1000);
         }
+        //progressDialog.dismiss();
     }
 
     @Override
