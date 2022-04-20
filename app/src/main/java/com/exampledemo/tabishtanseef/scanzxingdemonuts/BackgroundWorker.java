@@ -8,8 +8,8 @@ import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Handler;
-import android.support.annotation.RequiresApi;
-import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -31,7 +31,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         context = ctx;
     }
 
-    String user_name, password;
+    String user_name, password, email;
     private ProgressDialog progressDialog;
     @Override
     protected String doInBackground(String... params) {
@@ -39,6 +39,8 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         String login_url = "https://digigoodluck.com/app_login.php";
         String signup_url = "https://digigoodluck.com/app_register.php";
         String insertBook_url = "https://digigoodluck.com/app_insertBook.php";
+        String forgotPassword_url = "https://digigoodluck.com/app_forgotPassword.php";
+
         if(type.equals("login")){
             try {
                 user_name = params[1];
@@ -151,6 +153,40 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
             }
 
         }
+        else if(type.equals("forgotpassword")){
+            try {
+                email = params[1];
+                URL url = new URL(forgotPassword_url);
+                HttpURLConnection httpURLConnection = (HttpURLConnection)url.openConnection();
+                httpURLConnection.setRequestMethod("POST");
+                httpURLConnection.setDoOutput(true);
+                httpURLConnection.setDoInput(true);
+                OutputStream outputStream = httpURLConnection.getOutputStream();
+                BufferedWriter bufferedWriter = new BufferedWriter(new OutputStreamWriter(outputStream, "UTF-8"));
+                String post_data = URLEncoder.encode("email","UTF-8")+"="+URLEncoder.encode(email,"UTF-8");
+                bufferedWriter.write(post_data);
+                bufferedWriter.flush();
+                bufferedWriter.close();
+                outputStream.close();
+                InputStream inputStream = httpURLConnection.getInputStream();
+                BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(inputStream,"iso-8859-1" ));
+                String result="0";
+                String line="";
+                while((line = bufferedReader.readLine())!=null){
+                    result += line;
+                }
+                bufferedReader.close();
+                inputStream.close();
+                httpURLConnection.disconnect();
+                return result;
+
+            } catch (MalformedURLException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+        }
 
         return null;
     }
@@ -190,22 +226,20 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         {
            /* Intent i = new Intent(context,LoginActivity.class);
             context.startActivity(i);*/
-            alertDialog.setMessage("This user is already registered.");
+            alertDialog.setMessage("This Email is already registered.");
+            alertDialog.show();
+        }
+        else if(result.contains("This number is already registered."))
+        {
+            alertDialog.setMessage("This Number is already registered.");
             alertDialog.show();
         }
         else if(result.contains("book inserted"))
         {
            /* Intent i = new Intent(context,LoginActivity.class);
             context.startActivity(i);*/
-            alertDialog.setMessage("Book Added Successfully");
-            alertDialog.show();
-            new Handler().postDelayed(new Runnable(){
-                @Override
-                public void run(){
-                    Intent homeIntent = new Intent(context, Main2Activity.class);
-                    context.startActivity(homeIntent);
-                }
-            },1000);
+            Intent homeIntent = new Intent(context, Main2Activity.class);
+            context.startActivity(homeIntent);
         }
         else if(result.contains("Registration Successful"))
         {
@@ -240,6 +274,34 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
                     context.startActivity(homeIntent);
                 }
             },1000);
+        }
+        else if(result.contains("login failed")) // msg you get from success like "Login Success"
+        {
+                /*session.setusename(user_name);
+                session.setpassword(password);*/
+            alertDialog.setMessage("Your Password is incorrect");
+            alertDialog.show();
+        }
+        else if(result.contains("no account exists")) // msg you get from success like "Login Success"
+        {
+                /*session.setusename(user_name);
+                session.setpassword(password);*/
+            alertDialog.setMessage("No Such User Exist");
+            alertDialog.show();
+        }
+        else if(result.contains("mail sent")) // msg you get from success like "Login Success"
+        {
+                /*session.setusename(user_name);
+                session.setpassword(password);*/
+            alertDialog.setMessage("Please check your email we have sent your password.");
+            alertDialog.show();
+        }
+        else if(result.contains("mail not sent")) // msg you get from success like "Login Success"
+        {
+                /*session.setusename(user_name);
+                session.setpassword(password);*/
+            alertDialog.setMessage("Please try again.");
+            alertDialog.show();
         }
         //progressDialog.dismiss();
     }

@@ -52,12 +52,12 @@
         "source": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\src\\main\\res\\drawable-xxhdpi\\header_register.png"
     },
     {
-        "merged": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add.png.flat",
-        "source": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_add.png"
-    },
-    {
         "merged": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_header_login.png.flat",
         "source": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\src\\main\\res\\drawable-mdpi\\header_login.png"
+    },
+    {
+        "merged": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_add.png.flat",
+        "source": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_add.png"
     },
     {
         "merged": "C:\\Users\\Tabish\\AndroidStudioProjects\\ScanZxingDemonuts - Copy\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_add.png.flat",

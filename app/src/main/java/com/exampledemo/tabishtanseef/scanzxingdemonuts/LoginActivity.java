@@ -5,7 +5,7 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Pair;
 import android.view.View;
@@ -84,6 +84,11 @@ public class LoginActivity extends AppCompatActivity {
             BackgroundWorker backgroundWorker = new BackgroundWorker(this);
             backgroundWorker.execute(type, username, password);
 
+    }
+
+    public void onForgotPassword(View view){
+        Intent intent = new Intent(this, ForgotPassword.class);
+        startActivity(intent);
     }
 
 

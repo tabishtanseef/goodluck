@@ -2,7 +2,7 @@ package com.exampledemo.tabishtanseef.scanzxingdemonuts;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -41,9 +41,6 @@ public class MainActivity extends AppCompatActivity {
         Animation myanim = AnimationUtils.loadAnimation(this,R.anim.mytransition);
         tv.startAnimation(myanim);
         iv.startAnimation(myanim);
-
-
-
 
         new Handler().postDelayed(new Runnable(){
             @Override
